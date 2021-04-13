@@ -57,7 +57,7 @@ thead{
 			});
 		});
 	</script>
-	<button id='bt1'>Inserir</button>
+	<button id='bt1' type="button" class="btn btn-dark">Inserir</button>
 	<div id='form1' style="background-color: grey; width: 400px;">
 		<h4>Inserir Cliente</h4>
 		<form action="inserir.php" method="POST">

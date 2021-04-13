@@ -7,22 +7,27 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <style>
-li {
-    background-color: red;
-    height: 100px;
-}
 </style>
 
 <body>
     <?php
 
     ?>
-    <ul>
-        <li><a href=homeclientes.php>Clientes</a></li>
-        <li><a href=homeprodutos.php>Produtos</a></li>
-    </ul>
-    <script>
-    </script>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand">CLIENT REGISTER</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="homeclientes.php">Clientes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="homeprodutos.php">Produtos</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 </body>
 
