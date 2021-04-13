@@ -16,7 +16,9 @@ body {background-color: salmon;}
     <?php
 
     ?>
+    
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
   <div class="container-fluid">
   <a type="navbar-brand" class="btn btn-primary"><h3>Client Register</h3></a>
     
