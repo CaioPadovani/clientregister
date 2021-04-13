@@ -16,6 +16,6 @@
 		}else{
 			echo "Erro ao alterar o Cliente!";
 		}
-		echo "</br><a href='index.php'>Voltar</a>";
+		echo "</br><a href='homeclientes.php'>Voltar</a>";
 	}
 ?>

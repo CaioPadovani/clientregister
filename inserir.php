@@ -14,14 +14,14 @@ if (isset($_POST['nome'])) {
 		?>
 		<script>
 			window.alert("Cliente inserido com sucesso!");
-			window.location.href = "./index.php";
+			window.location.href = "./homeclientes.php";
 		</script>
 		<?php
 	} else {
 		?>
 		<script>
 			window.alert("Erro ao inserir o cliente!");
-			window.location.href = "./index.php";
+			window.location.href = "./homeclientes.php";
 		</script>
 		<?php
 	}

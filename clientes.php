@@ -84,24 +84,12 @@ class clientes
 	{
 		return $this->mensagem;
 	}
-	public function imprime()
-	{
-		echo "id=" . $this->id . "<br>";
-		echo "nome=" . $this->nome . "<br>";
-		echo "sobrenome=" . $this->sobrenome . "<br>";
-		echo "sexo=" . $this->sexo . "<br>";
-		echo "email=" . $this->email . "<br>";
-		echo "telefone=" . $this->telefone . "<br>";
-		echo "cidade=" . $this->cidade . "<br>";
-		echo "estado=" . $this->estado . "<br>";
-		echo "mensagem=" . $this->mensagem . "<br>";
-	}
 	public function inserir()
 	{
 		$conectado = new conexao();
 		$st = $conectado->conn->prepare(
-			"insert into clientes(nome,sobrenome,sexo,email,telefone,cidade,estado,mensagem) " .
-				"values(:n,:s,:se,:e,:t,:c,:es,:m,)"
+		"insert into clientes(nome,sobrenome,sexo,email,telefone,cidade,estado,mensagem) " .
+		"values(:n,:s,:se,:e,:t,:c,:es,:m)"
 		);
 		$st->bindValue(":n", $this->getNome());
 		$st->bindValue(":s", $this->getSobrenome());
@@ -117,8 +105,8 @@ class clientes
 	{
 		$conectado = new conexao();
 		$st = $conectado->conn->prepare(
-			"update clientes set nome=:n,sobrenome=:s,sexo=:se,email=:e,telefone=:t,cidade=:c,estado=:es,mensagem=:m" .
-				"tele where id=:id"
+		"update clientes set nome=:n,sobrenome=:s,sexo=:se,email=:e,telefone=:t," .
+		"cidade=:c,estado=:es,mensagem=:m where id=:id"
 		);
 		$st->bindValue(":id", $this->getId());
 		$st->bindValue(":n", $this->getNome());

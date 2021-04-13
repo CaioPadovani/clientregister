@@ -8,8 +8,7 @@
 </head>
 <style>
 thead{
-	background: rgb(131,58,180);
-	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+	background-color: #6D745F;
 }
 </style>
 
@@ -22,8 +21,10 @@ thead{
 	echo "<thead>";
 	echo "<tr>";
 	echo "<th>ID</th><th>NOME</th>";
-	echo "<th>SOBRENOME</th><th>E-MAIL</th>";
-	echo "<th>TELEFONE</th><th>SEXO</th>";
+	echo "<th>SOBRENOME</th><th>SEXO</th>";
+	echo "<th>EMAIL</th><th>TELEFONE</th>";
+	echo "<th>CIDADE</th><th>ESTADO</th>";
+	echo "<th>MENSAGEM</th>";
 	echo "<th></th><th></th>";
 	echo "</tr>";
 	echo "</thead>";
@@ -32,9 +33,12 @@ thead{
 		echo "<td>" . $linha['id'] . "</td>";
 		echo "<td>" . $linha['nome'] . "</td>";
 		echo "<td>" . $linha['sobrenome'] . "</td>";
+		echo "<td>" . $linha['sexo'] . "</td>";
 		echo "<td>" . $linha['email'] . "</td>";
 		echo "<td>" . $linha['telefone'] . "</td>";
-		echo "<td>" . $linha['sexo'] . "</td>";
+		echo "<td>" . $linha['cidade'] . "</td>";
+		echo "<td>" . $linha['estado'] . "</td>";
+		echo "<td>" . $linha['mensagem'] . "</td>";
 		echo "<td><a href=excluir.php?id="
 			. $linha['id'] . ">Excluir</a></td>";
 		echo "<td><a href=alterar.php?id="
@@ -58,11 +62,8 @@ thead{
 		});
 	</script>
 	<style>
-body {
-	background-color: tan;
-	}
 </style>
-	<button id='bt1' type="button" class="btn btn-dark"><h2>Inserir</h2></button>
+	<button id="bt1" type="button" class="btn btn-secondary btn-sm">inserir</button>
 	<div id='form1' style="background-color: grey; width: 400px;">
 		<h4>Inserir Cliente</h4>
 		<form action="inserir.php" method="POST">
@@ -79,7 +80,7 @@ body {
 				<input type="email" name="email">
 			</p>
 			<p><label for="telefone">Telefone:</label>
-				<input type="number" name="telefone">
+				<input type="text" name="telefone">
 			</p>
 			<p><label for="cidade">Cidade:</label>
 				<input type="text" name="cidade">

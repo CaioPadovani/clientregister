@@ -37,13 +37,6 @@
 		public function getFornecedor(){
 			return $this->fornecedor;
 		}
-		/*public function imprime(){
-			echo "id=".$this->id."<br>";
-			echo "nome=".$this->nome."<br>";
-			echo "descricao=".$this->descricao."<br>";
-			echo "quantidade=".$this->quantidade."<br>";
-			echo "fornecedor=".$this->fornecedor."<br>";
-		}*/
 		public function inserir(){
 			$conectado= new conexao();
 			$st=$conectado->conn->prepare(

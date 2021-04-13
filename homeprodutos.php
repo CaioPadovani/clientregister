@@ -11,40 +11,8 @@
 <body>
 <style>
 thead{
-	background: rgb(131,58,180);
-	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+	background-color: #6D745F;
 }
-
-
-#id1{
-	background-color: grey;
-
-}
-
-#quantidade{
-	background-color: grey;
-
-}
-#forncedor{
-	background-color: grey;
-
-}
-#descricao{
-	background-color: grey;
-
-}
-#descricao{
-	background-color: grey;
-
-}
-#nome{
-	background-color: grey;
-
-}
-
-
-
-
 
 
 </style>
@@ -67,7 +35,7 @@ thead{
 		echo "<td id='nome>".$linha['nome']."</td>";
 		echo "<td id='descricao'>".$linha['descricao']."</td>";
 		echo "<td id='quantidade'>".$linha['quantidade']."</td>";
-		echo "<td id='forncedor'>".$linha['fornecedor']."</td>";
+		echo "<td id='fornecedor'>".$linha['fornecedor']."</td>";
 		echo "<td><a href=excluir2.php?id="
 			.$linha['id'].">Excluir</a></td>";
 		echo "<td><a href=alterarp.php?id="
@@ -90,17 +58,8 @@ thead{
 			});
 		});
 	</script>
-
-	<button id='bt1' type="button" class="btn btn-dark"><h2>Inserir</h2></button>
-	<div id='form1'>
-
-	<button type="button" class="btn btn-primary"><h2>Inserir Produto</h2></button>
-	
-<style>
-body {
-	background-color: tan;
-	}
-</style>
+	<button id="bt1" type="button" class="btn btn-secondary btn-sm">inserir</button>
+	<div id='form1' style="background-color: grey; width: 400px; height: 300px">	
 		<form action="inserir2.php" method="POST">
 				<p><label for="nome">Nome:</label>
 				<input type="text" name="nome" required></p>
@@ -113,7 +72,6 @@ body {
 			    <p><button type="submit">Inserir</button>
 				<button id='bt2'>Cancelar</button></p>						
 		</form>
-
 	</div>
 </body>
 </html>
