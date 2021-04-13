@@ -7,7 +7,10 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <style>
-</style>
+body {background-color: salmon;}
+</style> 
+
+
 
 <body>
     <?php
@@ -15,14 +18,18 @@
     ?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand">CLIENT REGISTER</a>
+  <a type="navbar-brand" class="btn btn-primary"><h3>Client Register</h3></a>
+    
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="homeclientes.php">Clientes</a>
+          <a class="nav-link active" aria-current="page" href="homeclientes.php"><h2>Clientes</h2></a>
         </li>
+        
         <li class="nav-item">
-          <a class="nav-link" href="homeprodutos.php">Produtos</a>
+        <a class="nav-link" href="homeprodutos.php"><h2>Produtos</h2></a>              
+
         </li>
       </ul>
     </div>
