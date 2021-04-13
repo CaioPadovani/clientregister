@@ -21,9 +21,9 @@ thead{
 	echo "<table class='table table-striped'>";
 	echo "<thead>";
 	echo "<tr>";
-	echo "<th>id</th><th>nome</th>";
-	echo "<th>sobrenome</th><th>email</th>";
-	echo "<th>telefone</th><th>sexo</th>";
+	echo "<th>ID</th><th>NOME</th>";
+	echo "<th>SOBRENOME</th><th>E-MAIL</th>";
+	echo "<th>TELEFONE</th><th>SEXO</th>";
 	echo "<th></th><th></th>";
 	echo "</tr>";
 	echo "</thead>";
@@ -57,7 +57,12 @@ thead{
 			});
 		});
 	</script>
-	<button id='bt1' type="button" class="btn btn-dark">Inserir</button>
+	<style>
+body {
+	background-color: tan;
+	}
+</style>
+	<button id='bt1' type="button" class="btn btn-dark"><h2>Inserir</h2></button>
 	<div id='form1' style="background-color: grey; width: 400px;">
 		<h4>Inserir Cliente</h4>
 		<form action="inserir.php" method="POST">

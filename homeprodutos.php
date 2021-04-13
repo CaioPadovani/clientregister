@@ -14,10 +14,7 @@ thead{
 	background: rgb(131,58,180);
 	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 }
-thead{
-	background: rgb(131,58,180);
-	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-}
+
 
 #id1{
 	background-color: grey;
@@ -93,14 +90,15 @@ thead{
 			});
 		});
 	</script>
-    <button id='bt1'>Inserir</button>
+
+	<button id='bt1' type="button" class="btn btn-dark"><h2>Inserir</h2></button>
 	<div id='form1'>
 
 	<button type="button" class="btn btn-primary"><h2>Inserir Produto</h2></button>
 	
 <style>
 body {
-	background-color: green;
+	background-color: tan;
 	}
 </style>
 		<form action="inserir2.php" method="POST">
