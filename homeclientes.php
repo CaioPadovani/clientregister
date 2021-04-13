@@ -6,6 +6,12 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
+<style>
+thead{
+	background: rgb(131,58,180);
+	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+</style>
 
 <body>
 	<?php
@@ -52,7 +58,7 @@
 		});
 	</script>
 	<button id='bt1'>Inserir</button>
-	<div id='form1'>
+	<div id='form1' style="background-color: grey; width: 400px;">
 		<h4>Inserir Cliente</h4>
 		<form action="inserir.php" method="POST">
 			<p><label for="nome">Nome:</label>

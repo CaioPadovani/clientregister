@@ -10,14 +10,14 @@
 			?>
 			<script>
 			   window.alert("Produto inserido com sucesso!");
-			   window.location.href="./index.php";
+			   window.location.href="./homeprodutos.php";
 			</script>
 			<?php
 		}else{
 			?>
 			<script>
 			   window.alert("Erro ao inserir o Produto!");
-			   window.location.href="./index.php";
+			   window.location.href="./homeprodutos.php";
 			</script>
 			<?php
 		}

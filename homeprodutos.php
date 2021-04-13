@@ -8,6 +8,17 @@
   crossorigin="anonymous"></script>
 </head>
 <body>
+<style>
+thead{
+	background: rgb(131,58,180);
+	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+#nome{
+	background-color: green;
+
+}
+
+</style>
 <?php
 	require_once 'produtos.php';
 	$student = new produtos();
@@ -23,7 +34,7 @@
 	echo "</thead>";
 	foreach($resp as $linha){
 		echo "<tr>";
-		echo "<td>".$linha['id']."</td>";
+		echo "<td id='nome'>".$linha['id']."</td>";
 		echo "<td>".$linha['nome']."</td>";
 		echo "<td>".$linha['descricao']."</td>";
 		echo "<td>".$linha['quantidade']."</td>";
